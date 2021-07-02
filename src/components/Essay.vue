@@ -289,3 +289,9 @@
     </section>
   </article>
 </template>
+
+<script>
+export default {
+  name: 'Essay'
+}
+</script>
