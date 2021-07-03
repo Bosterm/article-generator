@@ -14,14 +14,16 @@
           and acknowledgement today. The campus of the University of Illinois at
           Urbana-Champaign (UIUC) in particular is the land of the Peoria,
           Kaskaskia, Piankashaw, Wea, Miami, Mascoutin, Odawa, Sauk, Mesquaki,
-          Kickapoo, Potawatomi, Ojibwe, and Chickasaw Nations. The arrival of
-          Anglo-American settlers to Illinois in the late 18th and early 19th
-          centuries brought a violent, oppressive colonialism in which white
-          Americans brutally attacked and killed the idigenous peoples of
-          Illinois. The survivors of this violent ethnic cleansing were
-          forcefully removed to regions outside of the state. This cleansing was
-          so absolute that no Native American reservations exist in the state of
-          Illinois today.
+          Kickapoo, Potawatomi, Ojibwe, and Chickasaw Nations.
+        </p>
+        <p>
+          The arrival of Anglo-American settlers to Illinois in the late 18th
+          and early 19th centuries brought a violent, oppressive colonialism in
+          which white Americans brutally attacked and killed the idigenous
+          peoples of Illinois. The survivors of this violent ethnic cleansing
+          were forcefully removed to regions outside of the state. This
+          cleansing was so absolute that no Native American reservations exist
+          in the state of Illinois today.
         </p>
         <p>
           The forced removal of indigenous peoples throughout the United States
