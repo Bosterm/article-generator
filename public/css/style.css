@@ -120,6 +120,10 @@ body {
   #title {
     margin-bottom: 1rem;
   }
+
+  section:first-child {
+    margin-top: 6rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
