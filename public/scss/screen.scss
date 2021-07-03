@@ -2,6 +2,11 @@ body {
     font-size: $base-font-size;
 }
 
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 article {
     max-width:600px;
     margin:0 auto
