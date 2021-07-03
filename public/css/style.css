@@ -112,6 +112,10 @@ body {
   article ul {
     list-style: square;
   }
+
+  #title, #byline {
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

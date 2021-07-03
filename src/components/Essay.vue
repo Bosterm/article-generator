@@ -1,10 +1,10 @@
 <template>
   <main>
-    <h1>
+    <h1 id="title">
       Recommendations for the University of Illinois Archives on the Handling of
       the Doris Duke Oral History Collection
     </h1>
-    <h2>Ben Ostermeier</h2>
+    <h2 id="byline">Ben Ostermeier</h2>
     <article>
       <section id="1-background-information">
         <h2>Background Information</h2>
