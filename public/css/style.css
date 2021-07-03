@@ -56,4 +56,9 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+:root {
+  font-size: 62.5%;
+  /* (62.5/100) * 16px = 10px */
+}
+
 /*# sourceMappingURL=style.css.map */
