@@ -61,4 +61,10 @@ body {
   /* (62.5/100) * 16px = 10px */
 }
 
+@media screen {
+  body {
+    font-size: 2rem;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
