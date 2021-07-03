@@ -26,3 +26,15 @@ p {
 li {
     margin-bottom: 1rem;
 }
+
+ol, ul {
+    padding-left:4rem
+}
+
+article ol {
+	list-style:decimal
+}
+
+article ul {
+    list-style:square
+}
