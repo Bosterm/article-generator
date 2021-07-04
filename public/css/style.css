@@ -127,6 +127,10 @@ body {
     margin-top: 6rem;
   }
 
+  section {
+    margin-bottom: 3rem;
+  }
+
   section > h2 {
     margin-bottom: 1rem;
   }
