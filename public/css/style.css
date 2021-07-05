@@ -146,6 +146,18 @@ body {
   a, a:visited {
     color: #07a;
   }
+
+  sup {
+    top: -0.5em;
+    position: relative;
+    font-size: 75%;
+    line-height: 0;
+    vertical-align: baseline;
+  }
+
+  .reference {
+    text-decoration: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
