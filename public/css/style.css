@@ -163,8 +163,18 @@ body {
     font-style: italic;
   }
 
+  #references {
+    margin-bottom: 2rem;
+  }
+
   #references h2 {
     text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  cite {
+    display: block;
+    margin-bottom: 1rem;
   }
 }
 

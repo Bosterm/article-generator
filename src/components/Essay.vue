@@ -320,7 +320,7 @@
           <a href="https://chancellor.illinois.edu/land_acknowledgement.html"
             >https://chancellor.illinois.edu/land_acknowledgement.html</a
           >.</cite
-        ><br>
+        >
         <cite
           ><a id="footnote2" href="#reference2">2</a>. James E. Davis,
           <em><a href="http://worldcat.org/oclc/39182546">Frontier Illinois</a></em>.
