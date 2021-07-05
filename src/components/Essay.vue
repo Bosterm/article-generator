@@ -37,7 +37,7 @@
               id="reference2"
               href="#footnote2"
               title="James E. Davis, Frontier Illinois. (Bloomington: Indiana University Press, 1998), 198-199."
-              >1</a
+              >2</a
             ></sup
           >
         </p>
