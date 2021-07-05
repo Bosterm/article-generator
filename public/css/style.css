@@ -158,6 +158,10 @@ body {
   .reference {
     text-decoration: none;
   }
+
+  em {
+    font-style: italic;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
