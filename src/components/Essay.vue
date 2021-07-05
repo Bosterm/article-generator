@@ -14,7 +14,15 @@
           and acknowledgement today. The campus of the University of Illinois at
           Urbana-Champaign (UIUC) in particular is the land of the Peoria,
           Kaskaskia, Piankashaw, Wea, Miami, Mascoutin, Odawa, Sauk, Mesquaki,
-          Kickapoo, Potawatomi, Ojibwe, and Chickasaw Nations.<sup><a class="reference" id="reference1" href="#footnote1" title="Office of the Chancellor, &quot;Land Acknowledgement Statement,&quot; 2018.">1</a></sup>
+          Kickapoo, Potawatomi, Ojibwe, and Chickasaw Nations.<sup
+            ><a
+              class="reference"
+              id="reference1"
+              href="#footnote1"
+              title='Office of the Chancellor, "Land Acknowledgement Statement," 2018.'
+              >1</a
+            ></sup
+          >
         </p>
         <p>
           The arrival of Anglo-American settlers to Illinois in the late 18th
@@ -296,6 +304,16 @@
           in some form.
         </p>
       </section>
+      <footer>
+        <h2>References</h2>
+        <cite
+          ><a id="footnote1" href="#reference1">1</a>. Office of the Chancellor,
+          "Land Acknowledgement Statement," 2018,
+          <a href="https://chancellor.illinois.edu/land_acknowledgement.html"
+            >https://chancellor.illinois.edu/land_acknowledgement.html</a
+          >.</cite
+        >
+      </footer>
     </article>
   </main>
 </template>
