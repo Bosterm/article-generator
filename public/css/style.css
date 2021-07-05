@@ -175,6 +175,10 @@ body {
   #references ol {
     padding-left: 2rem;
   }
+
+  #references li {
+    font-size: 1.5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
