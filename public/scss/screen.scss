@@ -15,19 +15,19 @@ article {
 }
 
 h1 {
-    font-size: 1.5 * $base-font-size;
+    font-size: 1.75 * $base-font-size;
 }
 
 h2 {
-    font-size: 1.25 * $base-font-size;
+    font-size: 1.5 * $base-font-size;
 }
 
 h3 {
-    font-size: 1.125 * $base-font-size;
+    font-size: 1.25 * $base-font-size;
 }
 
 h4 {
-    font-size: 1.0625 * $base-font-size;
+    font-size: 1.125 * $base-font-size;
 }
 
 p {
@@ -70,7 +70,8 @@ section {
 }
 
 section > h2 {
-    margin-bottom:1rem
+    margin-bottom:1rem;
+    font-weight:600
 }
 
 a, a:visited {
