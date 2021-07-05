@@ -312,7 +312,7 @@
           in some form.
         </p>
       </section>
-      <footer>
+      <footer id="references">
         <h2>References</h2>
         <cite
           ><a id="footnote1" href="#reference1">1</a>. Office of the Chancellor,

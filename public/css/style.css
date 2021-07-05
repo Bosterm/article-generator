@@ -162,6 +162,10 @@ body {
   em {
     font-style: italic;
   }
+
+  #references h2 {
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
