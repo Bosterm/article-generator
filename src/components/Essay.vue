@@ -31,7 +31,15 @@
           peoples of Illinois. The survivors of this violent ethnic cleansing
           were forcefully removed to regions outside of the state. This
           cleansing was so absolute that no Native American reservations exist
-          in the state of Illinois today.
+          in the state of Illinois today.<sup
+            ><a
+              class="reference"
+              id="reference2"
+              href="#footnote2"
+              title="James E. Davis, Frontier Illinois. (Bloomington: Indiana University Press, 1998), 198-199."
+              >1</a
+            ></sup
+          >
         </p>
         <p>
           The forced removal of indigenous peoples throughout the United States
@@ -312,6 +320,11 @@
           <a href="https://chancellor.illinois.edu/land_acknowledgement.html"
             >https://chancellor.illinois.edu/land_acknowledgement.html</a
           >.</cite
+        ><br>
+        <cite
+          ><a id="footnote2" href="#reference2">2</a>. James E. Davis,
+          <em><a href="http://worldcat.org/oclc/39182546">Frontier Illinois</a></em>.
+          (Bloomington: Indiana University Press, 1998), 198-199.</cite
         >
       </footer>
     </article>
