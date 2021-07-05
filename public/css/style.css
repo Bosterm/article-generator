@@ -53,7 +53,7 @@ table {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 
 :root {
@@ -76,6 +76,10 @@ body {
   article {
     max-width: 600px;
     margin: 0 auto;
+  }
+
+  #title {
+    font-family: "Noto Serif", serif;
   }
 
   h1 {
