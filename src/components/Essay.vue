@@ -44,7 +44,7 @@
           to promote the &ldquo;civilizing&rdquo; process that would transform
           young Americans into &ldquo;industrious, civilized&rdquo; adults, a
           critical part of the colonialist process.<footnote
-            text="Robert Lee, Tristan Ahtone, Margaret Pearce, Kalen Goodluck, Geoff McGhee, Cody Leff, Katherine Lanpher, and Taryn Salinas, “Land-Grab Universities,” High Country News, March 30, 2020, <a href='https://www.landgrabu.org/'>https://www.landgrabu.org/</a>."
+            text="Robert Lee, Tristan Ahtone, Margaret Pearce, Kalen Goodluck, Geoff McGhee, Cody Leff, Katherine Lanpher, and Taryn Salinas, “Land-Grab Universities,” <em>High Country News</em>, March 30, 2020, <a href='https://www.landgrabu.org/'>https://www.landgrabu.org/</a>."
             fid="lee-1"
             :footnoteNumber="footnotes['lee-1']['footnoteNumber']"
             @footnote-added="addFootnote"
@@ -54,13 +54,24 @@
           In 1966, about a century after UIUC was established, tobacco heiress
           and philanthropist Doris Duke began awarding grants to universities to
           collect oral histories from Indigenous peoples throughout the United
-          States. One of these grants was awarded to the anthropology department
-          of UIUC. The oral history program began at UIUC the following year,
-          1967, under the direction of anthropology professor Edward Bruner.
-          Alongside additional anthropology professors, the program had input
-          from three historians. However, the bulk of the oral history
-          collection and community engagement was undertaken by project field
-          workers, who were predominantly anthropology graduate students.
+          States.<footnote
+            text="Roth-Schrefer, Kristin and Dryfoos, Delaney, “DDCF Announces the Doris Duke NativeOralHistory Revitalization Project,” press release, February 9, 2021, <a href='https://www.ddcf.org/globalassets/child-well-being/press-releases/dd-native-oral-history-revitalization-project-launch.pdf'>https://www.ddcf.org/globalassets/child-well-being/press-releases/dd-native-oral-history-revitalization-project-launch.pdf</a>."
+            fid="schrefer-1"
+            :footnoteNumber="footnotes['schrefer-1']['footnoteNumber']"
+            @footnote-added="addFootnote"
+          ></footnote>
+          One of these grants was awarded to the anthropology department of
+          UIUC. The oral history program began at UIUC the following year, 1967,
+          under the direction of anthropology professor Edward Bruner. Alongside
+          additional anthropology professors, the program had input from three
+          historians. However, the bulk of the oral history collection and
+          community engagement was undertaken by project field workers, who were
+          predominantly anthropology graduate students.<footnote
+            text="Bruner, Edward, <em>The Duke Indian Oral History Program: The University of Illinois</em>, report, 1995."
+            fid="bruner-1"
+            :footnoteNumber="footnotes['bruner-1']['footnoteNumber']"
+            @footnote-added="addFootnote"
+          ></footnote>
         </p>
         <p>
           Possibly the greatest challenge faced by this program is the absence
@@ -75,7 +86,12 @@
           anthropology department developing a cooperative, reciprocal
           relationship with a smaller, local Indigenous community, it became the
           responsibility of individual field workers to build relationships with
-          Indigenous communities.
+          Indigenous communities.<footnote
+            text="Bruner, Edward, <em>The Duke Indian Oral History Program</em>."
+            fid="bruner-2"
+            :footnoteNumber="footnotes['bruner-2']['footnoteNumber']"
+            @footnote-added="addFootnote"
+          ></footnote>
         </p>
         <p>
           The results of this strategy were mixed. Graduate student field
@@ -99,7 +115,12 @@
           not have prioritized the collection of archival material. By and
           large, the oral histories and other materials focus on depth and
           intimacy rather than a broad scope of information about the Indigenous
-          community.
+          community.<footnote
+            text="Bruner, Edward, <em>The Duke Indian Oral History Program</em>."
+            fid="bruner-3"
+            :footnoteNumber="footnotes['bruner-3']['footnoteNumber']"
+            @footnote-added="addFootnote"
+          ></footnote>
         </p>
         <p>
           As was common practice for anthropologists at the time, the field
@@ -108,7 +129,12 @@
           There is little lasting record describing the nature of these
           conversations between researchers and subjects, and it may be the case
           that these dialogues and agreements varied for both researchers and
-          subjects.
+          subjects.<footnote
+            text="Anderson, Bethany and Prom, Chris, “Class Visit to IS 510: Libraries, Information, and Society,” April 6, 2021."
+            fid="anderson-1"
+            :footnoteNumber="footnotes['anderson-1']['footnoteNumber']"
+            @footnote-added="addFootnote"
+          ></footnote>
         </p>
         <p>
           After the program concluded in the early 1970s, the collection was
@@ -124,7 +150,12 @@
           general public with some level of restriction for particular materials
           in the collection. University Archives reached out to the original
           field researchers to establish what level of access should be
-          established for the materials in the Duke Collection.
+          established for the materials in the Duke Collection.<footnote
+            text="Bruner, Edward, <em>The Duke Indian Oral History Program</em>."
+            fid="bruner-4"
+            :footnoteNumber="footnotes['bruner-4']['footnoteNumber']"
+            @footnote-added="addFootnote"
+          ></footnote>
         </p>
         <p>
           After hearing back from most of the field researchers, in 2003 the
@@ -152,14 +183,24 @@
         <p>
           Additionally, any PII was restricted, and researchers using the
           materials were required to respect the anonymity of any individuals
-          represented in the materials.
+          represented in the materials.<footnote
+            text="Anderson and Prom “Class Visit,” 2021."
+            fid="anderson-2"
+            :footnoteNumber="footnotes['anderson-2']['footnoteNumber']"
+            @footnote-added="addFootnote"
+          ></footnote>
         </p>
         <p>
           Since 2003, nine people have requested access to level 2 materials.
           Three to four of these were representatives of native nations. In
           addition to those representatives, some graduate students in the
           American Indian Studies program at UIUC and other historians and
-          scholars have worked with the materials.
+          scholars have worked with the materials.<footnote
+            text="Anderson and Prom “Class Visit,” 2021."
+            fid="anderson-3"
+            :footnoteNumber="footnotes['anderson-3']['footnoteNumber']"
+            @footnote-added="addFootnote"
+          ></footnote>
         </p>
       </section>
       <section id="2-extent-of-materials">
@@ -185,7 +226,12 @@
           </li>
         </ul>
         <p>
-          The collection also includes tape recordings of Native American music.
+          The collection also includes tape recordings of Native American music.<footnote
+            text="University of Illinois Archives, <em>Doris Duke Indian Oral History Program Archives, 1908-1995 Finding Aid</em>, no date. <a href='https://files.archon.library.illinois.edu/uasfa/1502032.pdf'>https://files.archon.library.illinois.edu/uasfa/1502032.pdf</a>."
+            fid="finding-aid-1"
+            :footnoteNumber="footnotes['finding-aid-1']['footnoteNumber']"
+            @footnote-added="addFootnote"
+          ></footnote>
         </p>
         <p>
           To give a sense of the nature of these projects, here are two projects
@@ -203,7 +249,12 @@
             Norma Linton, an anthropology graduate student who lived with the
             Crow people in their Montana reservation for nearly a year and
             became deeply embedded into the community. She was adopted into the
-            Crow tribe and participated in their Sun Dance.
+            Crow tribe and participated in their Sun Dance.<footnote
+            text="Bruner, <em>The Duke Indian Oral History Program</em>."
+            fid="bruner-5"
+            :footnoteNumber="footnotes['bruner-5']['footnoteNumber']"
+            @footnote-added="addFootnote"
+          ></footnote>
           </li>
         </ul>
       </section>
@@ -214,7 +265,12 @@
           &ldquo;research, teaching, display, imaging, and circulation of human
           remains and cultural items that are potentially subject to
           NAGPRA,&rdquo; NAGPRA referring to the Native American Graves
-          Protection and Repatriation Act of 1990. This law is meant to
+          Protection and Repatriation Act of 1990.<footnote
+            text="NAGPRA Office, “Moratorium,” Illinois Native American Graves Protection and Repatriation Act, September 2020, <a href='https://nagpra.illinois.edu/moratorium/'>https://nagpra.illinois.edu/moratorium/</a>."
+            fid="nagpra-1"
+            :footnoteNumber="footnotes['nagpra-1']['footnoteNumber']"
+            @footnote-added="addFootnote"
+          ></footnote> This law is meant to
           repatriate cultural items to the Native American group that they
           belong to. While most if not all of the materials in the Duke
           collection are not technically covered under NAGPRA, the
@@ -228,10 +284,20 @@
           universities, including UIUC, &ldquo;to digitize, translate and index
           recordings and materials spanning 150 Indigenous cultures; improve
           their accessibility and utility to Native communities, tribal colleges
-          and the wider public.&rdquo; University Archives has begun a two year
+          and the wider public.&rdquo;<footnote
+            text="Roth-Schrefer and Dryfoos, <em>DDCF Announces</em>, 2021, <a href='https://www.ddcf.org/globalassets/child-well-being/press-releases/dd-native-oral-history-revitalization-project-launch.pdf'>https://www.ddcf.org/globalassets/child-well-being/press-releases/dd-native-oral-history-revitalization-project-launch.pdf</a>."
+            fid="schrefer-2"
+            :footnoteNumber="footnotes['schrefer-2']['footnoteNumber']"
+            @footnote-added="addFootnote"
+          ></footnote> University Archives has begun a two year
           project to work with its Duke collection, making it accessible online
           through partnerships with the tribal groups represented in the
-          collection.
+          collection.<footnote
+            text="Nicole Piwowarczyk, <em>Anderson, Prom, and Davis Awarded Doris Duke Indian Oral History Program Archives: Revitalization and Community Building Grant</em>, press release, February 22, 2021, <a href='http://publish.illinois.edu/library-excellence/2021/02/22/anderson-prom-and-davis-awarded-doris-duke-indian-oral-history-program-archives-revitalization-and-community-building-grant/'>http://publish.illinois.edu/library-excellence/2021/02/22/anderson-prom-and-davis-awarded-doris-duke-indian-oral-history-program-archives-revitalization-and-community-building-grant/</a>."
+            fid="piwowarczyk-1"
+            :footnoteNumber="footnotes['piwowarczyk-1']['footnoteNumber']"
+            @footnote-added="addFootnote"
+          ></footnote>
         </p>
       </section>
       <section id="4-my-recomendations">
@@ -342,6 +408,45 @@ export default {
         "lee-1": {
           footnoteNumber: 0,
         },
+        "schrefer-1": {
+          footnoteNumber: 0,
+        },
+        "bruner-1": {
+          footnoteNumber: 0,
+        },
+        "bruner-2": {
+          footnoteNumber: 0,
+        },
+        "bruner-3": {
+          footnoteNumber: 0,
+        },
+        "anderson-1": {
+          footnoteNumber: 0,
+        },
+        "bruner-4": {
+          footnoteNumber: 0,
+        },
+        "anderson-2": {
+          footnoteNumber: 0,
+        },
+        "anderson-3": {
+          footnoteNumber: 0,
+        },
+        "finding-aid-1": {
+          footnoteNumber: 0,
+        },
+        "bruner-5": {
+          footnoteNumber: 0,
+        },
+        "nagpra-1": {
+          footnoteNumber: 0
+        },
+        "schrefer-2": {
+          footnoteNumber: 0,
+        },
+        "piwowarczyk-1": {
+          footnoteNumber: 0,
+        }
       },
     };
   },
