@@ -309,24 +309,8 @@
       <footer id="references">
         <h2>References</h2>
         <ol>
-          <li>
-            <cite
-              >Office of the Chancellor, "Land Acknowledgement Statement," 2018,
-              <a
-                href="https://chancellor.illinois.edu/land_acknowledgement.html"
-                >https://chancellor.illinois.edu/land_acknowledgement.html</a
-              >.</cite
-            >
-          </li>
-          <li>
-            <cite
-              >James E. Davis,
-              <em
-                ><a href="http://worldcat.org/oclc/39182546"
-                  >Frontier Illinois</a
-                ></em
-              >. (Bloomington: Indiana University Press, 1998), 198-199.</cite
-            >
+          <li v-for="footnote in footnotes" :key="footnote.fid">
+            <cite>{{ footnote.text }}</cite>
           </li>
         </ol>
       </footer>
