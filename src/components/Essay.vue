@@ -15,6 +15,10 @@
           Urbana-Champaign (UIUC) in particular is the land of the Peoria,
           Kaskaskia, Piankashaw, Wea, Miami, Mascoutin, Odawa, Sauk, Mesquaki,
           Kickapoo, Potawatomi, Ojibwe, and Chickasaw Nations.<footnote
+            text='Office of the Chancellor, "Land Acknowledgement Statement," 2018.'
+            fid="chancellor-1"
+            :footnoteNumber="footnotes['chancellor-1']['footnoteNumber']"
+            @footnote-added="addFootnote"
           ></footnote>
         </p>
         <p>
@@ -24,15 +28,12 @@
           peoples of Illinois. The survivors of this vicious ethnic cleansing
           were forcefully removed to regions outside of the state in a process
           so thorough that no Native American reservations exist in the state of
-          Illinois today.<sup
-            ><a
-              class="reference"
-              id="reference2"
-              href="#footnote2"
-              title="James E. Davis, Frontier Illinois. (Bloomington: Indiana University Press, 1998), 198-199."
-              >2</a
-            ></sup
-          >
+          Illinois today.<footnote
+            text="James E. Davis, Frontier Illinois. (Bloomington: Indiana University Press, 1998), 198-199."
+            fid="davis-1"
+            :footnoteNumber="footnotes['davis-1']['footnoteNumber']"
+            @footnote-added="addFootnote"
+          ></footnote>
         </p>
         <p>
           The forced removal of indigenous peoples throughout the United States
@@ -42,7 +43,12 @@
           universities. One of these institutions was UIUC, established in 1867
           to promote the &ldquo;civilizing&rdquo; process that would transform
           young Americans into &ldquo;industrious, civilized&rdquo; adults, a
-          critical part of the colonialist process.
+          critical part of the colonialist process.<footnote
+            text="Robert Lee, Tristan Ahtone, Margaret Pearce, Kalen Goodluck, Geoff McGhee, Cody Leff, Katherine Lanpher, and Taryn Salinas, “Land-Grab Universities,” High Country News, March 30, 2020, https://www.landgrabu.org/."
+            fid="lee-1"
+            :footnoteNumber="footnotes['lee-1']['footnoteNumber']"
+            @footnote-added="addFootnote"
+          ></footnote>
         </p>
         <p>
           In 1966, about a century after UIUC was established, tobacco heiress
@@ -335,6 +341,29 @@ export default {
   name: "Essay",
   components: {
     Footnote,
+  },
+  data() {
+    return {
+      footnoteCounter: 0,
+      footnotes: {
+        "chancellor-1": {
+          footnoteNumber: 0,
+        },
+        "davis-1": {
+          footnoteNumber: 0,
+        },
+        "lee-1": {
+          footnoteNumber: 0,
+        },
+      },
+    };
+  },
+  methods: {
+    addFootnote(footnote) {
+      footnote.footnoteNumber = this.footnoteCounter + 1;
+      this.footnotes[footnote.fid] = footnote;
+      this.footnoteCounter += 1;
+    },
   },
 };
 </script>
