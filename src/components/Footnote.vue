@@ -4,7 +4,7 @@
         class="reference"
         :id="'reference' + footnoteNumber"
         :href="'#footnote' + footnoteNumber"
-        :title="text"
+        :title="title"
         >{{footnoteNumber}}</a
     ></sup
     >
@@ -34,6 +34,13 @@ export default {
       type: Number,
       required: true
     }
+  },
+  computed: {
+    title() {
+      var text = this.text.replace( /(<([^>]+)>)/ig, '');
+      text = text.replace( /, https:.*$/, '.');
+      return text;
+    },
   },
 };
 </script>
