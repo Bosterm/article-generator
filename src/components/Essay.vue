@@ -310,7 +310,10 @@
         <h2>References</h2>
         <ol>
           <li v-for="footnote in footnotes" :key="footnote.fid">
-            <cite v-html="footnote.text" :id="'footnote' + footnote.footnoteNumber"></cite>
+            <cite
+              v-html="footnote.text"
+              :id="'footnote' + footnote.footnoteNumber"
+            ></cite>
           </li>
         </ol>
       </footer>
