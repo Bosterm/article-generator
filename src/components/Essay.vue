@@ -17,7 +17,11 @@
           Kickapoo, Potawatomi, Ojibwe, and Chickasaw Nations.<footnote
             text='Office of the Chancellor, "Land Acknowledgement Statement," 2018, <a href="https://chancellor.illinois.edu/land_acknowledgement.html">https://chancellor.illinois.edu/land_acknowledgement.html</a>.'
             fid="chancellor-1"
-            :footnoteNumber="footnotes['chancellor-1']['footnoteNumber']"
+            :footnoteNumber="
+              footnotes.find((obj) => {
+                return obj.fid === 'chancellor-1';
+              }).footnoteNumber
+            "
             @footnote-added="addFootnote"
           ></footnote>
         </p>
@@ -31,7 +35,11 @@
           Illinois today.<footnote
             text="James E. Davis, <em>Frontier Illinois</em>. (Bloomington: Indiana University Press, 1998), 198-199."
             fid="davis-1"
-            :footnoteNumber="footnotes['davis-1']['footnoteNumber']"
+            :footnoteNumber="
+              footnotes.find((obj) => {
+                return obj.fid === 'davis-1';
+              }).footnoteNumber
+            "
             @footnote-added="addFootnote"
           ></footnote>
         </p>
@@ -46,7 +54,11 @@
           critical part of the colonialist process.<footnote
             text="Robert Lee, Tristan Ahtone, Margaret Pearce, Kalen Goodluck, Geoff McGhee, Cody Leff, Katherine Lanpher, and Taryn Salinas, “Land-Grab Universities,” <em>High Country News</em>, March 30, 2020, <a href='https://www.landgrabu.org/'>https://www.landgrabu.org/</a>."
             fid="lee-1"
-            :footnoteNumber="footnotes['lee-1']['footnoteNumber']"
+            :footnoteNumber="
+              footnotes.find((obj) => {
+                return obj.fid === 'lee-1';
+              }).footnoteNumber
+            "
             @footnote-added="addFootnote"
           ></footnote>
         </p>
@@ -57,7 +69,11 @@
           States.<footnote
             text="Roth-Schrefer, Kristin and Dryfoos, Delaney, “DDCF Announces the Doris Duke NativeOralHistory Revitalization Project,” press release, February 9, 2021, <a href='https://www.ddcf.org/globalassets/child-well-being/press-releases/dd-native-oral-history-revitalization-project-launch.pdf'>https://www.ddcf.org/globalassets/child-well-being/press-releases/dd-native-oral-history-revitalization-project-launch.pdf</a>."
             fid="schrefer-1"
-            :footnoteNumber="footnotes['schrefer-1']['footnoteNumber']"
+            :footnoteNumber="
+              footnotes.find((obj) => {
+                return obj.fid === 'schrefer-1';
+              }).footnoteNumber
+            "
             @footnote-added="addFootnote"
           ></footnote>
           One of these grants was awarded to the anthropology department of
@@ -69,7 +85,11 @@
           predominantly anthropology graduate students.<footnote
             text="Bruner, Edward, <em>The Duke Indian Oral History Program: The University of Illinois</em>, report, 1995."
             fid="bruner-1"
-            :footnoteNumber="footnotes['bruner-1']['footnoteNumber']"
+            :footnoteNumber="
+              footnotes.find((obj) => {
+                return obj.fid === 'bruner-1';
+              }).footnoteNumber
+            "
             @footnote-added="addFootnote"
           ></footnote>
         </p>
@@ -89,7 +109,11 @@
           Indigenous communities.<footnote
             text="Bruner, Edward, <em>The Duke Indian Oral History Program</em>."
             fid="bruner-2"
-            :footnoteNumber="footnotes['bruner-2']['footnoteNumber']"
+            :footnoteNumber="
+              footnotes.find((obj) => {
+                return obj.fid === 'bruner-2';
+              }).footnoteNumber
+            "
             @footnote-added="addFootnote"
           ></footnote>
         </p>
@@ -118,7 +142,11 @@
           community.<footnote
             text="Bruner, Edward, <em>The Duke Indian Oral History Program</em>."
             fid="bruner-3"
-            :footnoteNumber="footnotes['bruner-3']['footnoteNumber']"
+            :footnoteNumber="
+              footnotes.find((obj) => {
+                return obj.fid === 'bruner-3';
+              }).footnoteNumber
+            "
             @footnote-added="addFootnote"
           ></footnote>
         </p>
@@ -132,7 +160,11 @@
           subjects.<footnote
             text="Anderson, Bethany and Prom, Chris, “Class Visit to IS 510: Libraries, Information, and Society,” April 6, 2021."
             fid="anderson-1"
-            :footnoteNumber="footnotes['anderson-1']['footnoteNumber']"
+            :footnoteNumber="
+              footnotes.find((obj) => {
+                return obj.fid === 'anderson-1';
+              }).footnoteNumber
+            "
             @footnote-added="addFootnote"
           ></footnote>
         </p>
@@ -153,7 +185,11 @@
           established for the materials in the Duke Collection.<footnote
             text="Bruner, Edward, <em>The Duke Indian Oral History Program</em>."
             fid="bruner-4"
-            :footnoteNumber="footnotes['bruner-4']['footnoteNumber']"
+            :footnoteNumber="
+              footnotes.find((obj) => {
+                return obj.fid === 'bruner-4';
+              }).footnoteNumber
+            "
             @footnote-added="addFootnote"
           ></footnote>
         </p>
@@ -186,7 +222,11 @@
           represented in the materials.<footnote
             text="Anderson and Prom “Class Visit,” 2021."
             fid="anderson-2"
-            :footnoteNumber="footnotes['anderson-2']['footnoteNumber']"
+            :footnoteNumber="
+              footnotes.find((obj) => {
+                return obj.fid === 'anderson-2';
+              }).footnoteNumber
+            "
             @footnote-added="addFootnote"
           ></footnote>
         </p>
@@ -198,7 +238,11 @@
           scholars have worked with the materials.<footnote
             text="Anderson and Prom “Class Visit,” 2021."
             fid="anderson-3"
-            :footnoteNumber="footnotes['anderson-3']['footnoteNumber']"
+            :footnoteNumber="
+              footnotes.find((obj) => {
+                return obj.fid === 'anderson-3';
+              }).footnoteNumber
+            "
             @footnote-added="addFootnote"
           ></footnote>
         </p>
@@ -226,10 +270,15 @@
           </li>
         </ul>
         <p>
-          The collection also includes tape recordings of Native American music.<footnote
-            text="University of Illinois Archives, <em>Doris Duke Indian Oral History Program Archives, 1908-1995 Finding Aid</em>, no date. <a href='https://files.archon.library.illinois.edu/uasfa/1502032.pdf'>https://files.archon.library.illinois.edu/uasfa/1502032.pdf</a>."
+          The collection also includes tape recordings of Native American
+          music.<footnote
+            text="University of Illinois Archives, <em>Doris Duke Indian Oral History Program Archives, 1908-1995 Finding Aid</em>, no date, <a href='https://files.archon.library.illinois.edu/uasfa/1502032.pdf'>https://files.archon.library.illinois.edu/uasfa/1502032.pdf</a>."
             fid="finding-aid-1"
-            :footnoteNumber="footnotes['finding-aid-1']['footnoteNumber']"
+            :footnoteNumber="
+              footnotes.find((obj) => {
+                return obj.fid === 'finding-aid-1';
+              }).footnoteNumber
+            "
             @footnote-added="addFootnote"
           ></footnote>
         </p>
@@ -250,11 +299,15 @@
             Crow people in their Montana reservation for nearly a year and
             became deeply embedded into the community. She was adopted into the
             Crow tribe and participated in their Sun Dance.<footnote
-            text="Bruner, <em>The Duke Indian Oral History Program</em>."
-            fid="bruner-5"
-            :footnoteNumber="footnotes['bruner-5']['footnoteNumber']"
-            @footnote-added="addFootnote"
-          ></footnote>
+              text="Bruner, <em>The Duke Indian Oral History Program</em>."
+              fid="bruner-5"
+              :footnoteNumber="
+                footnotes.find((obj) => {
+                  return obj.fid === 'bruner-5';
+                }).footnoteNumber
+              "
+              @footnote-added="addFootnote"
+            ></footnote>
           </li>
         </ul>
       </section>
@@ -268,12 +321,16 @@
           Protection and Repatriation Act of 1990.<footnote
             text="NAGPRA Office, “Moratorium,” Illinois Native American Graves Protection and Repatriation Act, September 2020, <a href='https://nagpra.illinois.edu/moratorium/'>https://nagpra.illinois.edu/moratorium/</a>."
             fid="nagpra-1"
-            :footnoteNumber="footnotes['nagpra-1']['footnoteNumber']"
+            :footnoteNumber="
+              footnotes.find((obj) => {
+                return obj.fid === 'nagpra-1';
+              }).footnoteNumber
+            "
             @footnote-added="addFootnote"
-          ></footnote> This law is meant to
-          repatriate cultural items to the Native American group that they
-          belong to. While most if not all of the materials in the Duke
-          collection are not technically covered under NAGPRA, the
+          ></footnote>
+          This law is meant to repatriate cultural items to the Native American
+          group that they belong to. While most if not all of the materials in
+          the Duke collection are not technically covered under NAGPRA, the
           university&rsquo;s moratorium indicates a commitment towards a more
           ethical, native-centered approach to the use and ownership of Native
           American materials.
@@ -287,15 +344,23 @@
           and the wider public.&rdquo;<footnote
             text="Roth-Schrefer and Dryfoos, <em>DDCF Announces</em>, 2021, <a href='https://www.ddcf.org/globalassets/child-well-being/press-releases/dd-native-oral-history-revitalization-project-launch.pdf'>https://www.ddcf.org/globalassets/child-well-being/press-releases/dd-native-oral-history-revitalization-project-launch.pdf</a>."
             fid="schrefer-2"
-            :footnoteNumber="footnotes['schrefer-2']['footnoteNumber']"
+            :footnoteNumber="
+              footnotes.find((obj) => {
+                return obj.fid === 'schrefer-2';
+              }).footnoteNumber
+            "
             @footnote-added="addFootnote"
-          ></footnote> University Archives has begun a two year
-          project to work with its Duke collection, making it accessible online
-          through partnerships with the tribal groups represented in the
-          collection.<footnote
+          ></footnote>
+          University Archives has begun a two year project to work with its Duke
+          collection, making it accessible online through partnerships with the
+          tribal groups represented in the collection.<footnote
             text="Nicole Piwowarczyk, <em>Anderson, Prom, and Davis Awarded Doris Duke Indian Oral History Program Archives: Revitalization and Community Building Grant</em>, press release, February 22, 2021, <a href='http://publish.illinois.edu/library-excellence/2021/02/22/anderson-prom-and-davis-awarded-doris-duke-indian-oral-history-program-archives-revitalization-and-community-building-grant/'>http://publish.illinois.edu/library-excellence/2021/02/22/anderson-prom-and-davis-awarded-doris-duke-indian-oral-history-program-archives-revitalization-and-community-building-grant/</a>."
             fid="piwowarczyk-1"
-            :footnoteNumber="footnotes['piwowarczyk-1']['footnoteNumber']"
+            :footnoteNumber="
+              footnotes.find((obj) => {
+                return obj.fid === 'piwowarczyk-1';
+              }).footnoteNumber
+            "
             @footnote-added="addFootnote"
           ></footnote>
         </p>
@@ -397,65 +462,88 @@ export default {
   },
   data() {
     return {
-      footnoteCounter: 0,
-      footnotes: {
-        "chancellor-1": {
+      footnoteCounter: 1,
+      footnotes: [
+        {
+          fid: "chancellor-1",
           footnoteNumber: 0,
         },
-        "davis-1": {
+        {
+          fid: "davis-1",
           footnoteNumber: 0,
         },
-        "lee-1": {
+        {
+          fid: "lee-1",
           footnoteNumber: 0,
         },
-        "schrefer-1": {
+        {
+          fid: "schrefer-1",
           footnoteNumber: 0,
         },
-        "bruner-1": {
+        {
+          fid: "bruner-1",
           footnoteNumber: 0,
         },
-        "bruner-2": {
+        {
+          fid: "bruner-2",
           footnoteNumber: 0,
         },
-        "bruner-3": {
+        {
+          fid: "bruner-3",
           footnoteNumber: 0,
         },
-        "anderson-1": {
+        {
+          fid: "bruner-4",
           footnoteNumber: 0,
         },
-        "bruner-4": {
+        {
+          fid: "anderson-1",
           footnoteNumber: 0,
         },
-        "anderson-2": {
+        {
+          fid: "anderson-2",
           footnoteNumber: 0,
         },
-        "anderson-3": {
+        {
+          fid: "anderson-3",
           footnoteNumber: 0,
         },
-        "finding-aid-1": {
+        {
+          fid: "finding-aid-1",
           footnoteNumber: 0,
         },
-        "bruner-5": {
+        {
+          fid: "bruner-5",
           footnoteNumber: 0,
         },
-        "nagpra-1": {
-          footnoteNumber: 0
-        },
-        "schrefer-2": {
+        {
+          fid: "nagpra-1",
           footnoteNumber: 0,
         },
-        "piwowarczyk-1": {
+        {
+          fid: "piwowarczyk-1",
           footnoteNumber: 0,
-        }
-      },
+        },
+        {
+          fid: "schrefer-2",
+          footnoteNumber: 0,
+        },
+      ],
     };
   },
   methods: {
     addFootnote(footnote) {
-      footnote.footnoteNumber = this.footnoteCounter + 1;
-      this.footnotes[footnote.fid] = footnote;
+      footnote.footnoteNumber = this.footnoteCounter;
+      let fn = this.footnotes.find((obj) => {
+        return obj.fid === footnote.fid;
+      });
+      fn.footnoteNumber = footnote.footnoteNumber;
+      fn.text = footnote.text;
       this.footnoteCounter += 1;
     },
+  },
+  mounted() {
+    this.footnotes.sort((a, b) => a.footnoteNumber - b.footnoteNumber);
   },
 };
 </script>
