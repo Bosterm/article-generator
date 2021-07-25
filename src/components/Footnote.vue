@@ -5,6 +5,7 @@
         :id="'reference' + footnoteNumber"
         :href="'#footnote' + footnoteNumber"
         :title="title"
+        :data-digit="digits"
         >{{footnoteNumber}}</a
     ></sup
     >
@@ -17,6 +18,7 @@ export default {
       fid: this.fid,
       text: this.text,
       footnoteNumber: this.footnoteNumber,
+      digits: this.digits
     }
     this.$emit('footnote-added', footnote)
   },
@@ -41,6 +43,14 @@ export default {
       text = text.replace( /, https:.*$/, '.');
       return text;
     },
+    digits() {
+      if (this.footnoteNumber < 10) {
+        return 1
+      }
+      else {
+        return 2
+      }
+    }
   },
 };
 </script>

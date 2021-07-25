@@ -135,9 +135,16 @@ em {
     font-weight: bold;
     background-color: #d0d0d0;
     border-radius: 50%;
-    padding: 0.2em 0.5em 0.2em;
 }
 
 .footnote-number a, .footnote-number a:visited  {
     color: #3d3d3d;
+}
+
+.reference[data-digit="1"], .footnote-number a[data-digit="1"] {
+    padding: 0.25em 0.5em;
+}
+
+.reference[data-digit="2"], .footnote-number a[data-digit="2"] {
+    padding: 0.25em 0.25em;
 }
