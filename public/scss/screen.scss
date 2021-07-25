@@ -137,8 +137,22 @@ em {
     border-radius: 50%;
 }
 
+.reference:hover {
+    background-color: #07a;
+    color:white;
+}
+
+a.reference:hover, a:visited.reference:hover {
+    color:white
+}
+
 .footnote-number a, .footnote-number a:visited  {
     color: #3d3d3d;
+}
+
+.footnote-number a:hover, .footnote-number a:hover:visited {
+    background-color: #07a;
+    color:white;
 }
 
 .reference[data-digit="1"], .footnote-number a[data-digit="1"] {
