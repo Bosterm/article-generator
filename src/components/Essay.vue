@@ -440,12 +440,15 @@
       <footer id="references">
         <h2>References</h2>
         <ol>
-          <li v-for="footnote in footnotes" :key="footnote.fid">
+          <div v-for="footnote in footnotes" :key="footnote.fid" class="footnote">
+            <span class="footnote-number">
+              <a :href="'#reference' + footnote.footnoteNumber">{{ footnote.footnoteNumber }}</a>
+            </span>
             <cite
               v-html="footnote.text"
               :id="'footnote' + footnote.footnoteNumber"
             ></cite>
-          </li>
+          </div>
         </ol>
       </footer>
     </article>

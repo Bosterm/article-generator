@@ -165,7 +165,7 @@ body {
   }
 
   a.reference, a:visited.reference {
-    color: #454545;
+    color: #3d3d3d;
   }
 
   em {
@@ -185,8 +185,27 @@ body {
     padding-left: 2rem;
   }
 
-  #references li {
+  #references div {
     font-size: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+  }
+
+  .footnote {
+    display: flex;
+  }
+
+  .footnote-number a {
+    text-decoration: none;
+    border-bottom: none;
+    font-weight: bold;
+    background-color: #d0d0d0;
+    border-radius: 50%;
+    padding: 0.2em 0.5em 0.2em;
+  }
+
+  .footnote-number a, .footnote-number a:visited {
+    color: #3d3d3d;
   }
 }
 
