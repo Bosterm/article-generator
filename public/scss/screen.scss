@@ -173,11 +173,14 @@ a.reference:hover, a:visited.reference:hover {
     border-radius:10px;
     background:#07a;
     color: #fff;
-    display:none;
+    visibility: hidden;
+    opacity:0;
+  transition:.3s opacity; 
 }
 
 .ref-container:hover .tooltip {
-    display:block
+    visibility: visible;
+    opacity:1
 }
 
 .tooltip:before {
@@ -189,9 +192,4 @@ a.reference:hover, a:visited.reference:hover {
     transform:translateY(-50%);
     border:10px solid #07a;
     border-color: transparent #07a transparent transparent;
-    display:none;
-}
-
-.ref-container:hover .tooltip:before {
-    display:block;
 }
