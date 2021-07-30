@@ -67,7 +67,7 @@
           and philanthropist Doris Duke began awarding grants to universities to
           collect oral histories from Indigenous peoples throughout the United
           States.<footnote
-            text="Roth-Schrefer, Kristin and Dryfoos, Delaney, “DDCF Announces the Doris Duke NativeOralHistory Revitalization Project,” press release, February 9, 2021, <a href='https://www.ddcf.org/globalassets/child-well-being/press-releases/dd-native-oral-history-revitalization-project-launch.pdf'>https://www.ddcf.org/globalassets/child-well-being/press-releases/dd-native-oral-history-revitalization-project-launch.pdf</a>."
+            text="Roth-Schrefer, Kristin and Dryfoos, Delaney, “DDCF Announces the Doris Duke Native Oral History Revitalization Project,” press release, February 9, 2021, <a href='https://www.ddcf.org/globalassets/child-well-being/press-releases/dd-native-oral-history-revitalization-project-launch.pdf'>https://www.ddcf.org/globalassets/child-well-being/press-releases/dd-native-oral-history-revitalization-project-launch.pdf</a>."
             fid="schrefer-1"
             :footnoteNumber="
               footnotes.find((obj) => {
