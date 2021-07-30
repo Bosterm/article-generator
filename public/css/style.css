@@ -246,6 +246,22 @@ body {
   .ref-container:hover:before {
     display: block;
   }
+
+  .ref-container:after {
+    content: "";
+    position: absolute;
+    left: 100%;
+    margin-left: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 10px solid #07a;
+    border-color: transparent #07a transparent transparent;
+    display: none;
+  }
+
+  .ref-container:hover:before, .ref-container:hover:after {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
