@@ -440,9 +440,17 @@
       <footer id="references">
         <h2>References</h2>
         <ol>
-          <div v-for="footnote in footnotes" :key="footnote.fid" class="footnote">
+          <div
+            v-for="footnote in footnotes"
+            :key="footnote.fid"
+            class="footnote"
+          >
             <span class="footnote-number">
-              <a :href="'#reference' + footnote.footnoteNumber" :data-digit="footnote.digits">{{ footnote.footnoteNumber }}</a>
+              <a
+                :href="'#reference' + footnote.footnoteNumber"
+                :data-digit="footnote.digits"
+                >{{ footnote.footnoteNumber }}</a
+              >
             </span>
             <cite
               v-html="footnote.text"
@@ -543,10 +551,9 @@ export default {
       fn.footnoteNumber = footnote.footnoteNumber;
       fn.text = footnote.text;
       if (footnote.footnoteNumber < 10) {
-        fn.digits = 1
-      }
-      else {
-        fn.digits = 2
+        fn.digits = 1;
+      } else {
+        fn.digits = 2;
       }
       this.footnoteCounter += 1;
     },

@@ -1,14 +1,13 @@
 <template>
-    <sup
+  <sup class="ref-container" :data-tooltip="title"
     ><a
-        class="reference"
-        :id="'reference' + footnoteNumber"
-        :href="'#footnote' + footnoteNumber"
-        :title="title"
-        :data-digit="digits"
-        >{{footnoteNumber}}</a
-    ></sup
+      class="reference"
+      :id="'reference' + footnoteNumber"
+      :href="'#footnote' + footnoteNumber"
+      :data-digit="digits"
+      >{{ footnoteNumber }}</a
     >
+  </sup>
 </template>
 
 <script>
@@ -18,39 +17,38 @@ export default {
       fid: this.fid,
       text: this.text,
       footnoteNumber: this.footnoteNumber,
-      digits: this.digits
-    }
-    this.$emit('footnote-added', footnote)
+      digits: this.digits,
+    };
+    this.$emit("footnote-added", footnote);
   },
   name: "Footnote",
   props: {
     text: {
       type: String,
-      required: true
+      required: true,
     },
     fid: {
       type: String,
-      required: true
+      required: true,
     },
     footnoteNumber: {
       type: Number,
-      required: true
-    }
+      required: true,
+    },
   },
   computed: {
     title() {
-      var text = this.text.replace( /(<([^>]+)>)/ig, '');
-      text = text.replace( /, https:.*$/, '.');
+      var text = this.text.replace(/(<([^>]+)>)/gi, "");
+      text = text.replace(/, https:.*$/, ".");
       return text;
     },
     digits() {
       if (this.footnoteNumber < 10) {
-        return 1
+        return 1;
+      } else {
+        return 2;
       }
-      else {
-        return 2
-      }
-    }
+    },
   },
 };
 </script>
