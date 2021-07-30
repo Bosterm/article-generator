@@ -7,6 +7,7 @@
       :data-digit="digits"
       >{{ footnoteNumber }}</a
     >
+    <span class="tooltip" v-html="title"></span>
   </sup>
 </template>
 
@@ -38,8 +39,7 @@ export default {
   },
   computed: {
     title() {
-      var text = this.text.replace(/(<([^>]+)>)/gi, "");
-      text = text.replace(/, https:.*$/, ".");
+      var text = this.text.replace(/, <a.*$/, ".");
       return text;
     },
     digits() {
