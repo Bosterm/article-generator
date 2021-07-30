@@ -87,7 +87,6 @@ sup {
     top: -.5em;
     position: relative;
     font-size: 75%;
-    line-height: 0;
     vertical-align: baseline;
 }
 
@@ -161,4 +160,23 @@ a.reference:hover, a:visited.reference:hover {
 
 .reference[data-digit="2"], .footnote-number a[data-digit="2"] {
     padding: 0.25em 0.25em;
+}
+
+.ref-container:before {
+    content: attr(data-tooltip);
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    left:100%;
+    margin-left:15px;
+    width:250px;
+    padding:10px;
+    border-radius:10px;
+    background:#07a;
+    color: #fff;
+    display:none;
+}
+
+.ref-container:hover:before {
+    display:block
 }
