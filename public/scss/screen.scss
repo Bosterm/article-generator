@@ -136,7 +136,7 @@ em {
     border-radius: 50%;
 }
 
-.reference:hover {
+.ref-container:hover .reference {
     background-color: #07a;
     color:white;
 }
@@ -149,7 +149,7 @@ a.reference:hover, a:visited.reference:hover {
     color: #3d3d3d;
 }
 
-.footnote-number a:hover, .footnote-number a:hover:visited {
+.footnote-number a:hover:visited, .tooltip:hover .footnote-number {
     background-color: #07a;
     color:white;
 }
@@ -175,7 +175,7 @@ a.reference:hover, a:visited.reference:hover {
     color: #fff;
     visibility: hidden;
     opacity:0;
-  transition:.3s opacity; 
+    transition:.3s opacity; 
 }
 
 .ref-container:hover .tooltip {
