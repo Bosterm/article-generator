@@ -170,12 +170,14 @@ a.reference:hover, a:visited.reference:hover {
     margin-left:15px;
     width:250px;
     padding:10px;
-    border-radius:10px;
+    border-radius:7px;
     background:#07a;
     color: #fff;
     visibility: hidden;
     opacity:0;
-    transition:.3s opacity; 
+    transition:.3s opacity;
+    -webkit-box-shadow: 0px 0px 17px 3px #8C8C8C;
+    box-shadow: 0px 0px 17px 3px #8C8C8C;
 }
 
 .ref-container:hover .tooltip {
