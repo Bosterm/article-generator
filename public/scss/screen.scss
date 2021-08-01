@@ -92,7 +92,6 @@ sup {
 
 .reference {
     text-decoration: none;
-    border-bottom: none;
     font-weight: bold;
     background-color:#d0d0d0;
     border-radius: 50%;
@@ -128,9 +127,8 @@ em {
     display:flex
 }
 
-.footnote-number a {
+.footnote-number button {
     text-decoration: none;
-    border-bottom: none;
     font-weight: bold;
     background-color: #d0d0d0;
     border-radius: 50%;
@@ -141,24 +139,24 @@ em {
     color:white;
 }
 
-a.reference:hover, a:visited.reference:hover {
+button.reference:hover {
     color:white
 }
 
-.footnote-number a, .footnote-number a:visited  {
+.footnote-number button  {
     color: #3d3d3d;
 }
 
-.footnote-number a:hover:visited, .tooltip:hover .footnote-number {
+.footnote-number button:hover, .tooltip:hover .footnote-number {
     background-color: #07a;
     color:white;
 }
 
-.reference[data-digit="1"], .footnote-number a[data-digit="1"] {
+.reference[data-digit="1"], .footnote-number button[data-digit="1"] {
     padding: 0.25em 0.5em;
 }
 
-.reference[data-digit="2"], .footnote-number a[data-digit="2"] {
+.reference[data-digit="2"], .footnote-number button[data-digit="2"] {
     padding: 0.25em 0.25em;
 }
 
