@@ -17,6 +17,7 @@
           Kickapoo, Potawatomi, Ojibwe, and Chickasaw Nations.<footnote
             text='Office of the Chancellor, "Land Acknowledgement Statement," 2018, <a href="https://chancellor.illinois.edu/land_acknowledgement.html">https://chancellor.illinois.edu/land_acknowledgement.html</a>.'
             fid="chancellor-1"
+            @reference-clicked="slideToElement"
             :footnoteNumber="
               footnotes.find((obj) => {
                 return obj.fid === 'chancellor-1';
@@ -35,6 +36,7 @@
           Illinois today.<footnote
             text="James E. Davis, <em>Frontier Illinois</em>. (Bloomington: Indiana University Press, 1998), 198-199."
             fid="davis-1"
+            @reference-clicked="slideToElement"
             :footnoteNumber="
               footnotes.find((obj) => {
                 return obj.fid === 'davis-1';
@@ -54,6 +56,7 @@
           critical part of the colonialist process.<footnote
             text="Robert Lee, Tristan Ahtone, Margaret Pearce, Kalen Goodluck, Geoff McGhee, Cody Leff, Katherine Lanpher, and Taryn Salinas, “Land-Grab Universities,” <em>High Country News</em>, March 30, 2020, <a href='https://www.landgrabu.org/'>https://www.landgrabu.org/</a>."
             fid="lee-1"
+            @reference-clicked="slideToElement"
             :footnoteNumber="
               footnotes.find((obj) => {
                 return obj.fid === 'lee-1';
@@ -69,6 +72,7 @@
           States.<footnote
             text="Roth-Schrefer, Kristin and Dryfoos, Delaney, “DDCF Announces the Doris Duke Native Oral History Revitalization Project,” press release, February 9, 2021, <a href='https://www.ddcf.org/globalassets/child-well-being/press-releases/dd-native-oral-history-revitalization-project-launch.pdf'>https://www.ddcf.org/globalassets/child-well-being/press-releases/dd-native-oral-history-revitalization-project-launch.pdf</a>."
             fid="schrefer-1"
+            @reference-clicked="slideToElement"
             :footnoteNumber="
               footnotes.find((obj) => {
                 return obj.fid === 'schrefer-1';
@@ -85,6 +89,7 @@
           predominantly anthropology graduate students.<footnote
             text="Bruner, Edward, <em>The Duke Indian Oral History Program: The University of Illinois</em>, report, 1995."
             fid="bruner-1"
+            @reference-clicked="slideToElement"
             :footnoteNumber="
               footnotes.find((obj) => {
                 return obj.fid === 'bruner-1';
@@ -109,6 +114,7 @@
           Indigenous communities.<footnote
             text="Bruner, Edward, <em>The Duke Indian Oral History Program</em>."
             fid="bruner-2"
+            @reference-clicked="slideToElement"
             :footnoteNumber="
               footnotes.find((obj) => {
                 return obj.fid === 'bruner-2';
@@ -142,6 +148,7 @@
           community.<footnote
             text="Bruner, Edward, <em>The Duke Indian Oral History Program</em>."
             fid="bruner-3"
+            @reference-clicked="slideToElement"
             :footnoteNumber="
               footnotes.find((obj) => {
                 return obj.fid === 'bruner-3';
@@ -160,6 +167,7 @@
           subjects.<footnote
             text="Anderson, Bethany and Prom, Chris, “Class Visit to IS 510: Libraries, Information, and Society,” April 6, 2021."
             fid="anderson-1"
+            @reference-clicked="slideToElement"
             :footnoteNumber="
               footnotes.find((obj) => {
                 return obj.fid === 'anderson-1';
@@ -185,6 +193,7 @@
           established for the materials in the Duke Collection.<footnote
             text="Bruner, Edward, <em>The Duke Indian Oral History Program</em>."
             fid="bruner-4"
+            @reference-clicked="slideToElement"
             :footnoteNumber="
               footnotes.find((obj) => {
                 return obj.fid === 'bruner-4';
@@ -222,6 +231,7 @@
           represented in the materials.<footnote
             text="Anderson and Prom “Class Visit,” 2021."
             fid="anderson-2"
+            @reference-clicked="slideToElement"
             :footnoteNumber="
               footnotes.find((obj) => {
                 return obj.fid === 'anderson-2';
@@ -238,6 +248,7 @@
           scholars have worked with the materials.<footnote
             text="Anderson and Prom “Class Visit,” 2021."
             fid="anderson-3"
+            @reference-clicked="slideToElement"
             :footnoteNumber="
               footnotes.find((obj) => {
                 return obj.fid === 'anderson-3';
@@ -274,6 +285,7 @@
           music.<footnote
             text="University of Illinois Archives, <em>Doris Duke Indian Oral History Program Archives, 1908-1995 Finding Aid</em>, no date, <a href='https://files.archon.library.illinois.edu/uasfa/1502032.pdf'>https://files.archon.library.illinois.edu/uasfa/1502032.pdf</a>."
             fid="finding-aid-1"
+            @reference-clicked="slideToElement"
             :footnoteNumber="
               footnotes.find((obj) => {
                 return obj.fid === 'finding-aid-1';
@@ -301,7 +313,8 @@
             Crow tribe and participated in their Sun Dance.<footnote
               text="Bruner, <em>The Duke Indian Oral History Program</em>."
               fid="bruner-5"
-              :footnoteNumber="
+              @reference-clicked="slideToElement"
+            :footnoteNumber="
                 footnotes.find((obj) => {
                   return obj.fid === 'bruner-5';
                 }).footnoteNumber
@@ -321,6 +334,7 @@
           Protection and Repatriation Act of 1990.<footnote
             text="NAGPRA Office, “Moratorium,” Illinois Native American Graves Protection and Repatriation Act, September 2020, <a href='https://nagpra.illinois.edu/moratorium/'>https://nagpra.illinois.edu/moratorium/</a>."
             fid="nagpra-1"
+            @reference-clicked="slideToElement"
             :footnoteNumber="
               footnotes.find((obj) => {
                 return obj.fid === 'nagpra-1';
@@ -344,6 +358,7 @@
           and the wider public.&rdquo;<footnote
             text="Roth-Schrefer and Dryfoos, <em>DDCF Announces</em>, 2021, <a href='https://www.ddcf.org/globalassets/child-well-being/press-releases/dd-native-oral-history-revitalization-project-launch.pdf'>https://www.ddcf.org/globalassets/child-well-being/press-releases/dd-native-oral-history-revitalization-project-launch.pdf</a>."
             fid="schrefer-2"
+            @reference-clicked="slideToElement"
             :footnoteNumber="
               footnotes.find((obj) => {
                 return obj.fid === 'schrefer-2';
@@ -356,6 +371,7 @@
           tribal groups represented in the collection.<footnote
             text="Nicole Piwowarczyk, <em>Anderson, Prom, and Davis Awarded Doris Duke Indian Oral History Program Archives: Revitalization and Community Building Grant</em>, press release, February 22, 2021, <a href='http://publish.illinois.edu/library-excellence/2021/02/22/anderson-prom-and-davis-awarded-doris-duke-indian-oral-history-program-archives-revitalization-and-community-building-grant/'>http://publish.illinois.edu/library-excellence/2021/02/22/anderson-prom-and-davis-awarded-doris-duke-indian-oral-history-program-archives-revitalization-and-community-building-grant/</a>."
             fid="piwowarczyk-1"
+            @reference-clicked="slideToElement"
             :footnoteNumber="
               footnotes.find((obj) => {
                 return obj.fid === 'piwowarczyk-1';
@@ -446,10 +462,10 @@
             class="footnote"
           >
             <span class="footnote-number">
-              <a
-                :href="'#reference' + footnote.footnoteNumber"
+              <button
                 :data-digit="footnote.digits"
-                >{{ footnote.footnoteNumber }}</a
+                @click="slideToElement('reference' + footnote.footnoteNumber)"
+                >{{ footnote.footnoteNumber }}</button
               >
             </span>
             <cite
@@ -557,6 +573,9 @@ export default {
       }
       this.footnoteCounter += 1;
     },
+    slideToElement(elementID) {
+      document.getElementById(elementID).scrollIntoView({behavior: "smooth", block: "start"});
+    }
   },
   mounted() {
     this.footnotes.sort((a, b) => a.footnoteNumber - b.footnoteNumber);

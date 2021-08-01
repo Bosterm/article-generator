@@ -1,11 +1,11 @@
 <template>
   <sup class="ref-container" :data-tooltip="title"
-    ><a
+    ><button
       class="reference"
       :id="'reference' + footnoteNumber"
-      :href="'#footnote' + footnoteNumber"
       :data-digit="digits"
-      >{{ footnoteNumber }}</a
+      @click="slideToElement"
+      >{{ footnoteNumber }}</button
     >
     <span class="tooltip" v-html="title"></span>
   </sup>
@@ -36,6 +36,11 @@ export default {
       type: Number,
       required: true,
     },
+  },
+  methods: {
+    slideToElement() {
+      this.$emit("reference-clicked", 'footnote' + this.footnoteNumber)
+    }
   },
   computed: {
     title() {
