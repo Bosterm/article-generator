@@ -457,9 +457,11 @@
         <h2>References</h2>
         <ol>
           <div
+            tabindex="0"
             v-for="footnote in footnotes"
             :key="footnote.fid"
             class="footnote"
+            :id="'footnote' + footnote.footnoteNumber"
           >
             <span class="footnote-number">
               <button
@@ -470,7 +472,6 @@
             </span>
             <cite
               v-html="footnote.text"
-              :id="'footnote' + footnote.footnoteNumber"
             ></cite>
           </div>
         </ol>
@@ -574,7 +575,9 @@ export default {
       this.footnoteCounter += 1;
     },
     slideToElement(elementID) {
-      document.getElementById(elementID).scrollIntoView({behavior: "smooth", block: "start"});
+      var element = document.getElementById(elementID)
+      element.scrollIntoView({behavior: "smooth", block: "center"});
+      element.focus({preventScroll: true});
     }
   },
   mounted() {
