@@ -201,9 +201,10 @@ body {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     line-height: 1.4;
+  }
+
+  .footnote-number {
     padding: 0.5rem 0;
-    transition: 0.3s box-shadow, 0.3s background-color;
-    cursor: pointer;
   }
 
   .footnote-number button {
@@ -239,7 +240,7 @@ body {
     padding: 0.25em 0.25em;
   }
 
-  .footnote:focus {
+  .footnote:focus cite {
     background: #07a;
     color: #fff;
     -webkit-box-shadow: 0px 0px 17px 3px #8C8C8C;
@@ -284,6 +285,13 @@ body {
     transform: translateY(-50%);
     border: 10px solid #07a;
     border-color: transparent #07a transparent transparent;
+  }
+
+  cite {
+    margin-left: 0.7rem;
+    padding: 0.5rem;
+    transition: 0.3s box-shadow, 0.3s background-color;
+    cursor: pointer;
   }
 }
 
