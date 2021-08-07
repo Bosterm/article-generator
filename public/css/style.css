@@ -256,7 +256,6 @@ body {
   .tooltip {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
     left: 100%;
     margin-left: 15px;
     width: 250px;
@@ -266,12 +265,19 @@ body {
     color: #fff;
     visibility: hidden;
     opacity: 0;
-    transition: 0.3s opacity;
+    transition: all 0.2s ease-in-out;
+    transform: scale3d(0.2, 0.2, 1) translateY(-50%);
     -webkit-box-shadow: 0px 0px 17px 3px #8C8C8C;
     box-shadow: 0px 0px 17px 3px #8C8C8C;
   }
 
   .ref-container:hover .tooltip {
+    transform: scale3d(1, 1, 1) translateY(-50%);
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .ref-container:hover .tooltip:before {
     visibility: visible;
     opacity: 1;
   }
@@ -282,6 +288,10 @@ body {
     right: 100%;
     margin-left: -5px;
     top: 50%;
+    transition: all 0.1s ease-in-out;
+    transition-delay: 0.3s;
+    opacity: 0;
+    visibility: hidden;
     transform: translateY(-50%);
     border: 10px solid #07a;
     border-color: transparent #07a transparent transparent;
