@@ -6,29 +6,17 @@
     </h1>
     <h2 id="byline">Ben Ostermeier</h2>
     <article v-html="essay" />
-    <article>
-      <section id="1-background-information">
-        
-        <h2>Background Information</h2>
-        <p>
-          For thousands of years, the land that we know of today as the state of
-          Illinois was home to many indigenous people deserving of our respect
-          and acknowledgement. The campus of the University of Illinois at
-          Urbana-Champaign (UIUC) in particular is the land of the Peoria,
-          Kaskaskia, Piankashaw, Wea, Miami, Mascoutin, Odawa, Sauk, Mesquaki,
-          Kickapoo, Potawatomi, Ojibwe, and Chickasaw Nations.<footnote
-            text='Office of the Chancellor, "Land Acknowledgement Statement," 2018, <a href="https://chancellor.illinois.edu/land_acknowledgement.html">https://chancellor.illinois.edu/land_acknowledgement.html</a>.'
-            fid="chancellor-1"
-            @reference-clicked="slideToElement"
-            :footnoteNumber="
-              footnotes.find((obj) => {
-                return obj.fid === 'chancellor-1';
-              }).footnoteNumber
-            "
-            @footnote-added="addFootnote"
-          ></footnote>
-        </p>
-      </section>
+    <footnote
+    text='Office of the Chancellor, "Land Acknowledgement Statement," 2018, <a href="https://chancellor.illinois.edu/land_acknowledgement.html">https://chancellor.illinois.edu/land_acknowledgement.html</a>.'
+    fid="chancellor-1"
+    @reference-clicked="slideToElement"
+    :footnoteNumber="
+        footnotes.find((obj) => {
+        return obj.fid === 'chancellor-1';
+        }).footnoteNumber
+    "
+    @footnote-added="addFootnote"
+    ></footnote>
       <footer id="references">
         <h2>References</h2>
         <ol>
@@ -52,7 +40,6 @@
           </div>
         </ol>
       </footer>
-    </article>
   </main>
 </template>
 
