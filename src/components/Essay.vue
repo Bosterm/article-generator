@@ -17,6 +17,17 @@
     "
     @footnote-added="addFootnote"
     ></footnote>
+    <footnote
+      text="James E. Davis, <em>Frontier Illinois</em>. (Bloomington: Indiana University Press, 1998), 198-199."
+      fid="davis-1"
+      @reference-clicked="slideToElement"
+      :footnoteNumber="
+        footnotes.find((obj) => {
+          return obj.fid === 'davis-1';
+        }).footnoteNumber
+      "
+      @footnote-added="addFootnote"
+    ></footnote>
       <footer id="references">
         <h2>References</h2>
         <ol>

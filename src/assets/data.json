@@ -1,10 +1,15 @@
 {
-    "essay": "<section id=\"1-background-information\"><h2>Background Information</h2><p>For thousands of years, the land we know of today as the state of Illinois was home to many indigenous people deserving of our respect and acknowledgement. The campus of the University of Illinois at Urbana-Champaign (UIUC) in particular is the land of the Peoria, Kaskaskia, Piankashaw, Wea, Miami, Mascoutin, Odawa, Sauk, Mesquaki, Kickapoo, Potawatomi, Ojibwe, and Chickasaw Nations.</p></section>",
+    "essay": "<section id=\"1-background-information\"><h2>Background Information</h2><p>For thousands of years, the land we know of today as the state of Illinois was home to many indigenous people deserving of our respect and acknowledgement. The campus of the University of Illinois at Urbana-Champaign (UIUC) in particular is the land of the Peoria, Kaskaskia, Piankashaw, Wea, Miami, Mascoutin, Odawa, Sauk, Mesquaki, Kickapoo, Potawatomi, Ojibwe, and Chickasaw Nations.</p><p>The arrival of Anglo-American settlers to Illinois in the late 18th and early 19th centuries brought a violent, oppressive colonialism in which white Americans brutally attacked and killed the idigenous peoples of Illinois. The survivors of this vicious ethnic cleansing were forcefully removed to regions outside of the state in a process so thorough that no Native American reservations exist in the state of Illinois today.</p></section>",
     "footnotes": [
         {
             "fid": "chancellor-1",
-            "footnoteNumber": 0,
+            "footnoteNumber": 1,
             "text":"'Office of the Chancellor, \"Land Acknowledgement Statement,\" 2018, <a href=\"https://chancellor.illinois.edu/land_acknowledgement.html\">https://chancellor.illinois.edu/land_acknowledgement.html</a>.'"
+        },
+        {
+            "fid": "davis-1",
+            "footnoteNumber": 2,
+            "text":"James E. Davis, <em>Frontier Illinois</em>. (Bloomington: Indiana University Press, 1998), 198-199."
         }
     ]
 }
