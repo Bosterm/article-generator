@@ -57,12 +57,7 @@ export default {
     return {
       footnoteCounter: 1,
       essay: externalData.essay,
-      footnotes: [
-        {
-          fid: "chancellor-1",
-          footnoteNumber: 0,
-        }
-      ],
+      footnotes: externalData.footnotes
     };
   },
   methods: {
