@@ -91,9 +91,6 @@ export default {
       element.scrollIntoView({behavior: "smooth", block: "center"});
       element.focus({preventScroll: true});
     }
-  },
-  mounted() {
-    this.footnotes.sort((a, b) => a.footnoteNumber - b.footnoteNumber);
-  },
+  }
 };
 </script>
