@@ -5,8 +5,10 @@
       the Doris Duke Oral History Collection
     </h1>
     <h2 id="byline">Ben Ostermeier</h2>
+    <article v-html="essay" />
     <article>
       <section id="1-background-information">
+        
         <h2>Background Information</h2>
         <p>
           For thousands of years, the land that we know of today as the state of
@@ -56,15 +58,18 @@
 
 <script>
 import Footnote from "./Footnote.vue";
+import externalData from '../assets/data.json';
 
 export default {
   name: "Essay",
+
   components: {
     Footnote,
   },
   data() {
     return {
       footnoteCounter: 1,
+      essay: externalData.essay,
       footnotes: [
         {
           fid: "chancellor-1",
