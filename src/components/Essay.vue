@@ -5,7 +5,9 @@
       the Doris Duke Oral History Collection
     </h1>
     <h2 id="byline">Ben Ostermeier</h2>
-    <article v-bind:is="processedEssay" />
+    <article  >
+      <component v-bind:is="processedEssay" />
+    </article>
     <footnote text='Office of the Chancellor, "Land Acknowledgement Statement," 2018, <a href="https://chancellor.illinois.edu/land_acknowledgement.html">https://chancellor.illinois.edu/land_acknowledgement.html</a>.' fid="chancellor-1" @reference-clicked="slideToElement" :footnoteNumber="
         footnotes.find((obj) => {
         return obj.fid === 'chancellor-1';
@@ -74,7 +76,7 @@ export default {
     processedEssay() {
       let essay = this.essay.replace('[fid:chancellor-1]', '<footnote text=\'Office of the Chancellor, "Land Acknowledgement Statement," 2018, <a href="https://chancellor.illinois.edu/land_acknowledgement.html">https://chancellor.illinois.edu/land_acknowledgement.html</a>.\' fid="chancellor-1" @reference-clicked="slideToElement" :footnoteNumber="1"></footnote>');
       return {
-        template: '<div>' + essay + '</div>'
+        template: essay
       }
 
     }
