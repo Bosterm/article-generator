@@ -7,18 +7,18 @@
     <h2 id="byline">Ben Ostermeier</h2>
     <article>
       <component v-bind:is="processedEssay" />
+      <footer id="references">
+        <h2>References</h2>
+        <ol>
+          <div tabindex="0" v-for="footnote in footnotes" :key="footnote.fid" class="footnote" :id="'footnote' + footnote.footnoteNumber">
+            <span class="footnote-number">
+              <button :data-digit="footnote.digits" @click="slideToElement('reference' + footnote.footnoteNumber)">{{ footnote.footnoteNumber }}</button>
+            </span>
+            <cite v-html="footnote.text"></cite>
+          </div>
+        </ol>
+      </footer>
     </article>
-    <footer id="references">
-      <h2>References</h2>
-      <ol>
-        <div tabindex="0" v-for="footnote in footnotes" :key="footnote.fid" class="footnote" :id="'footnote' + footnote.footnoteNumber">
-          <span class="footnote-number">
-            <button :data-digit="footnote.digits" @click="slideToElement('reference' + footnote.footnoteNumber)">{{ footnote.footnoteNumber }}</button>
-          </span>
-          <cite v-html="footnote.text"></cite>
-        </div>
-      </ol>
-    </footer>
   </main>
 </template>
 
