@@ -73,7 +73,14 @@ export default {
       });
 
       return {
-        template: tempEssay
+        template: tempEssay,
+        methods: {
+          slideToElement(elementID) {
+            var element = document.getElementById(elementID)
+            element.scrollIntoView({ behavior: "smooth", block: "center" });
+            element.focus({ preventScroll: true });
+          }
+        },
       }
 
     }
