@@ -36,26 +36,11 @@ export default {
   },
   data() {
     return {
-      footnoteCounter: 1,
       essay: externalData.essay,
       footnotes: externalData.footnotes
     };
   },
   methods: {
-    addFootnote(footnote) {
-      footnote.footnoteNumber = this.footnoteCounter;
-      let fn = this.footnotes.find((obj) => {
-        return obj.fid === footnote.fid;
-      });
-      fn.footnoteNumber = footnote.footnoteNumber;
-      fn.text = footnote.text;
-      if (footnote.footnoteNumber < 10) {
-        fn.digits = 1;
-      } else {
-        fn.digits = 2;
-      }
-      this.footnoteCounter += 1;
-    },
     slideToElement(elementID) {
       var element = document.getElementById(elementID)
       element.scrollIntoView({ behavior: "smooth", block: "center" });
