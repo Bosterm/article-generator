@@ -58,7 +58,7 @@ export default {
       });
 
       return {
-        template: tempEssay,
+        template: '<div>' + tempEssay + '</div>',
         methods: {
           slideToElement(elementID) {
             var element = document.getElementById(elementID)
