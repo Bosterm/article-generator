@@ -4,12 +4,14 @@
         {
             "fid": "chancellor-1",
             "footnoteNumber": 1,
-            "text":"Office of the Chancellor, \"Land Acknowledgement Statement,\" 2018, <a href=\"https://chancellor.illinois.edu/land_acknowledgement.html\">https://chancellor.illinois.edu/land_acknowledgement.html</a>."
+            "text":"Office of the Chancellor, \"Land Acknowledgement Statement,\" 2018, <a href=\"https://chancellor.illinois.edu/land_acknowledgement.html\">https://chancellor.illinois.edu/land_acknowledgement.html</a>.",
+            "digits":1
         },
         {
             "fid": "davis-1",
             "footnoteNumber": 2,
-            "text":"James E. Davis, <em>Frontier Illinois</em>. (Bloomington: Indiana University Press, 1998), 198-199."
+            "text":"James E. Davis, <em>Frontier Illinois</em>. (Bloomington: Indiana University Press, 1998), 198-199.",
+            "digits":1
         }
     ]
 }
