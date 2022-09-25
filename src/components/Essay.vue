@@ -74,14 +74,16 @@ export default {
   },
   computed: {
     processedEssay() {
-      let fn = this.footnotes.find((obj) => {
-        return obj.fid === 'chancellor-1';
-        });
-      let fnHTML = "<footnote text='" + fn.text + "' fid='" + fn.fid +"' @reference-clicked=\"slideToElement\" :footnoteNumber='" + fn.footnoteNumber +"'></footnote>";
+      var tempEssay = this.essay;
+
+      this.footnotes.forEach(fn => {
+        let fnHTML = "<footnote text='" + fn.text + "' fid='" + fn.fid +"' @reference-clicked=\"slideToElement\" :footnoteNumber='" + fn.footnoteNumber +"'></footnote>";
       let fnReplaceString = '[fid:'+ fn.fid +']';
-      let essay = this.essay.replace(fnReplaceString, fnHTML);
+      tempEssay = tempEssay.replace(fnReplaceString, fnHTML);
+      });
+      
       return {
-        template: essay
+        template: tempEssay
       }
 
     }
