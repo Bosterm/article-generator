@@ -8,16 +8,6 @@
     <article  >
       <component v-bind:is="processedEssay" />
     </article>
-    <footnote text='Office of the Chancellor, "Land Acknowledgement Statement," 2018, <a href="https://chancellor.illinois.edu/land_acknowledgement.html">https://chancellor.illinois.edu/land_acknowledgement.html</a>.' fid="chancellor-1" @reference-clicked="slideToElement" :footnoteNumber="
-        footnotes.find((obj) => {
-        return obj.fid === 'chancellor-1';
-        }).footnoteNumber
-    " @footnote-added="addFootnote"></footnote>
-    <footnote text="James E. Davis, <em>Frontier Illinois</em>. (Bloomington: Indiana University Press, 1998), 198-199." fid="davis-1" @reference-clicked="slideToElement" :footnoteNumber="
-      footnotes.find((obj) => {
-        return obj.fid === 'davis-1';
-      }).footnoteNumber
-    " @footnote-added="addFootnote"></footnote>
     <footer id="references">
       <h2>References</h2>
       <ol>
