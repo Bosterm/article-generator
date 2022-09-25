@@ -1,3 +1,4 @@
 module.exports = {
-  publicPath: '/nagpra-uiuc/'
+  publicPath: '/nagpra-uiuc/',
+  runtimeCompiler: true
 }
