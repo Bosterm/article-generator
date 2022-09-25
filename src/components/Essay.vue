@@ -5,7 +5,7 @@
       the Doris Duke Oral History Collection
     </h1>
     <h2 id="byline">Ben Ostermeier</h2>
-    <article  >
+    <article>
       <component v-bind:is="processedEssay" />
     </article>
     <footer id="references">
@@ -67,11 +67,11 @@ export default {
       var tempEssay = this.essay;
 
       this.footnotes.forEach(fn => {
-        let fnHTML = "<footnote text='" + fn.text + "' fid='" + fn.fid +"' @reference-clicked=\"slideToElement\" :footnoteNumber='" + fn.footnoteNumber +"'></footnote>";
-      let fnReplaceString = '[fid:'+ fn.fid +']';
-      tempEssay = tempEssay.replace(fnReplaceString, fnHTML);
+        let fnHTML = "<footnote text='" + fn.text + "' fid='" + fn.fid + "' @reference-clicked=\"slideToElement\" :footnoteNumber='" + fn.footnoteNumber + "'></footnote>";
+        let fnReplaceString = '[fid:' + fn.fid + ']';
+        tempEssay = tempEssay.replace(fnReplaceString, fnHTML);
       });
-      
+
       return {
         template: tempEssay
       }
