@@ -74,7 +74,12 @@ export default {
   },
   computed: {
     processedEssay() {
-      let essay = this.essay.replace('[fid:chancellor-1]', '<footnote text=\'Office of the Chancellor, "Land Acknowledgement Statement," 2018, <a href="https://chancellor.illinois.edu/land_acknowledgement.html">https://chancellor.illinois.edu/land_acknowledgement.html</a>.\' fid="chancellor-1" @reference-clicked="slideToElement" :footnoteNumber="1"></footnote>');
+      let fn = this.footnotes.find((obj) => {
+        return obj.fid === 'chancellor-1';
+        });
+      let fnHTML = "<footnote text='" + fn.text + "' fid='" + fn.fid +"' @reference-clicked=\"slideToElement\" :footnoteNumber='" + fn.footnoteNumber +"'></footnote>";
+      let fnReplaceString = '[fid:'+ fn.fid +']';
+      let essay = this.essay.replace(fnReplaceString, fnHTML);
       return {
         template: essay
       }
