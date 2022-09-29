@@ -12,7 +12,7 @@
         <ol>
           <div tabindex="0" v-for="footnote in footnotes" :key="footnote.fid" class="footnote" :id="'footnote' + footnote.footnoteNumber">
             <span class="footnote-number">
-              <button :data-digit="footnote.digits" @click="slideToElement('reference' + footnote.footnoteNumber)">{{ footnote.footnoteNumber }}</button>
+              <button :data-digit="digits(footnote)" @click="slideToElement('reference' + footnote.footnoteNumber)">{{ footnote.footnoteNumber }}</button>
             </span>
             <cite v-html="footnote.text"></cite>
           </div>
@@ -45,6 +45,13 @@ export default {
       var element = document.getElementById(elementID)
       element.scrollIntoView({ behavior: "smooth", block: "center" });
       element.focus({ preventScroll: true });
+    },
+    digits(fn) {
+      if (fn.footnoteNumber < 10) {
+        return 1;
+      } else {
+        return 2;
+      }
     }
   },
   computed: {
