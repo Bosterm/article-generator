@@ -46,7 +46,14 @@ export default {
     title() {
       var text = this.text.replace(/, <a.*$/, ".");
       return text;
-    }
+    },
+    digits() {
+      if (this.footnoteNumber < 10) {
+        return 1;
+      } else {
+        return 2;
+      }
+    },
   },
 };
 </script>
