@@ -1,0 +1,313 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  padding: 0;
+  cursor: pointer;
+}
+@media screen and (-ms-high-contrast: active) {
+  button {
+    border: 2px solid currentcolor;
+  }
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+  /* (62.5/100) * 16px = 10px */
+}
+
+@media screen {
+  body {
+    font-size: 2rem;
+    color: #2d2d2d;
+    background-color: #fffaf3;
+  }
+
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  article {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  #title {
+    font-family: "Noto Serif", serif;
+    line-height: 1.2;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  h4 {
+    font-size: 2.25rem;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+  }
+
+  li {
+    margin-bottom: 1rem;
+    line-height: 1.4;
+  }
+
+  ol, ul {
+    padding-left: 4rem;
+  }
+
+  article ol {
+    list-style: decimal;
+  }
+
+  article ul {
+    list-style: square;
+  }
+
+  #title, #byline {
+    text-align: center;
+  }
+
+  #title {
+    margin-bottom: 1rem;
+  }
+
+  section:first-child {
+    margin-top: 6rem;
+  }
+
+  section {
+    margin-bottom: 3rem;
+  }
+
+  section > h2 {
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+
+  a, a:visited {
+    color: #07a;
+  }
+
+  sup {
+    top: -0.5em;
+    position: relative;
+    font-size: 75%;
+    vertical-align: baseline;
+  }
+
+  .reference {
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #d0d0d0;
+    border-radius: 50%;
+    padding: 0.2em 0.5em 0.2em;
+  }
+
+  a.reference, a:visited.reference {
+    color: #3d3d3d;
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  #references {
+    margin-bottom: 2rem;
+  }
+
+  #references h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  #references ol {
+    padding-left: 2rem;
+  }
+
+  .footnote {
+    display: flex;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+  }
+
+  .footnote-number {
+    padding: 0.5rem 0;
+  }
+
+  .footnote-number button {
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #d0d0d0;
+    border-radius: 50%;
+  }
+
+  .ref-container:hover .reference {
+    background-color: #07a;
+    color: white;
+  }
+
+  button.reference:hover {
+    color: white;
+  }
+
+  .footnote-number button {
+    color: #3d3d3d;
+  }
+
+  .footnote-number button:hover, .tooltip:hover .footnote-number {
+    background-color: #07a;
+    color: white;
+  }
+
+  .reference[data-digit="1"], .footnote-number button[data-digit="1"] {
+    padding: 0.25em 0.5em;
+  }
+
+  .reference[data-digit="2"], .footnote-number button[data-digit="2"] {
+    padding: 0.25em 0.25em;
+  }
+
+  .footnote:focus cite {
+    background: #07a;
+    color: #fff;
+    -webkit-box-shadow: 0px 0px 17px 3px #8C8C8C;
+    box-shadow: 0px 0px 17px 3px #8C8C8C;
+    border-radius: 7px;
+    cursor: text;
+  }
+
+  .footnote:focus a, .footnote:focus a:visited {
+    color: #fff;
+  }
+
+  .tooltip {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-left: 15px;
+    width: 250px;
+    padding: 10px;
+    border-radius: 7px;
+    background: #07a;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    transform: scale3d(0.2, 0.2, 1) translateY(-50%);
+    -webkit-box-shadow: 0px 0px 17px 3px #8C8C8C;
+    box-shadow: 0px 0px 17px 3px #8C8C8C;
+  }
+
+  .ref-container:hover .tooltip {
+    transform: scale3d(1, 1, 1) translateY(-50%);
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .ref-container:hover .tooltip:before {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .tooltip:before {
+    content: "";
+    position: absolute;
+    right: 100%;
+    margin-left: -5px;
+    top: 50%;
+    transition: all 0.1s ease-in-out;
+    transition-delay: 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-50%);
+    border: 10px solid #07a;
+    border-color: transparent #07a transparent transparent;
+  }
+
+  cite {
+    margin-left: 0.7rem;
+    padding: 0.5rem;
+    transition: 0.3s box-shadow, 0.3s background-color;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0 1rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

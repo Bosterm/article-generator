@@ -1,0 +1,19 @@
+@import "reset";
+
+body {
+	font-family: 'Noto Sans', sans-serif;
+}
+
+$base-font-size: 2rem;
+
+:root {
+    font-size: 62.5%; /* (62.5/100) * 16px = 10px */
+}
+
+@media screen {
+    @import "screen";
+}
+
+@media screen and (max-width: 600px) {
+    @import "mobile";
+}
