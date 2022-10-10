@@ -19,7 +19,7 @@ use App\Http\Controllers\EssayController;
 //    return $request->user();
 //});
 
-Route::group(['prefix'=>'post'], function () {
+Route::group(['prefix'=>'essay'], function () {
     Route::get('/', [EssayController::class, 'index']);
     Route::get('/{id}', [EssayController::class, 'show']);
     Route::post('/', [EssayController::class, 'store']);
