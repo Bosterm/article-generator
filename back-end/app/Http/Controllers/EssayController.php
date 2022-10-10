@@ -51,8 +51,8 @@ class EssayController extends Controller
     public function update(Request $request, $id)
     {
         try {
-            $essays = Essay::find($id)
-                        ->update($request->all());
+            $essay = Essay::findOrFail($id);
+            $essay->update($request->all());
         } catch (Exception $e) {
             return response()->json([
                 'data' => [],
@@ -61,7 +61,7 @@ class EssayController extends Controller
         }
 
         return response()->json([
-            'data' => $essays,
+            'data' => $essay,
             'message' => 'Succeed'
         ], JsonResponse::HTTP_OK);
     }
