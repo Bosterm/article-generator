@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EssayController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +15,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+//Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+//    return $request->user();
+//});
+
+Route::group(['prefix'=>'post'], function () {
+    Route::get('/', [EssayController::class, 'index']);
+    Route::get('/{id}', [EssayController::class, 'show']);
+    Route::post('/', [EssayController::class, 'store']);
+    Route::put('/{id}', [EssayController::class, 'update']);
+    Route::delete('/{id}', [EssayController::class, 'destroy']);
 });
