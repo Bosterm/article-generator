@@ -26,6 +26,8 @@
 import Footnote from "./Footnote.vue";
 import externalData from '../assets/data.json';
 import Vue from 'vue';
+import EssayDataService from "../services/EssayDataService";
+
 Vue.component('footnote', Footnote);
 
 export default {
@@ -36,7 +38,7 @@ export default {
   },
   data() {
     return {
-      essay: externalData.essay,
+      essay: '',
       footnotes: externalData.footnotes
     };
   },
@@ -52,7 +54,22 @@ export default {
       } else {
         return 2;
       }
-    }
+    },
+    retrieveEssay() {
+      EssayDataService.get(1)
+        .then((response) => {
+          if (!response.data) {
+            return;
+          }
+          this.essay = response.data.data.body;
+        })
+        .catch((e) => {
+          console.log(e);
+        });
+    },
+  },
+  mounted() {
+    this.retrieveEssay();
   },
   computed: {
     processedEssay() {
