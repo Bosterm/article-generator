@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EssayController;
+use App\Http\Controllers\FootnoteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,4 +26,12 @@ Route::group(['prefix'=>'essay'], function () {
     Route::post('/', [EssayController::class, 'store']);
     Route::put('/{id}', [EssayController::class, 'update']);
     Route::delete('/{id}', [EssayController::class, 'destroy']);
+});
+
+Route::group(['prefix'=>'footnote'], function () {
+    Route::get('/', [FootnoteController::class, 'index']);
+    Route::get('/{id}', [FootnoteController::class, 'show']);
+    Route::post('/', [FootnoteController::class, 'store']);
+    Route::put('/{id}', [FootnoteController::class, 'update']);
+    Route::delete('/{id}', [FootnoteController::class, 'destroy']);
 });
