@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Http\JsonResponse;
 use App\Models\Essay;
+use App\Models\Footnote;
 use Exception;
 
 class EssayController extends Controller
@@ -35,15 +36,18 @@ class EssayController extends Controller
     {
         try {
             $essays = Essay::find($id);
+            $footnotes = Footnote::select('*')->where('essay_id', $id)->get();
         } catch (Exception $e) {
             return response()->json([
                 'data' => [],
                 'message'=>$e->getMessage()
             ], JsonResponse::HTTP_INTERNAL_SERVER_ERROR);
         }
-
         return response()->json([
-            'data' => $essays,
+            'data' => [
+                'essay' => $essays,
+                'footnotes' => $footnotes
+            ],
             'message' => 'Succeed'
         ], JsonResponse::HTTP_OK);
     }
