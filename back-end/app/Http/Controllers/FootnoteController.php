@@ -52,7 +52,7 @@ class FootnoteController extends Controller
     {
         try {
             $footnote = Footnote::findOrFail($id);
-            $footnote->update($footnote->all());
+            $footnote->update($request->all());
         } catch (Exception $e) {
             return response()->json([
                 'data' => [],
