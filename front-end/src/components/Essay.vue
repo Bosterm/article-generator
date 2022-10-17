@@ -61,7 +61,7 @@ export default {
           if (!response.data) {
             return;
           }
-          this.essay = response.data.data.body;
+          this.essay = response.data.data.essay.body;
         })
         .catch((e) => {
           console.log(e);
