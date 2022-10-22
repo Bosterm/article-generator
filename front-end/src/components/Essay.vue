@@ -10,9 +10,9 @@
       <footer id="references">
         <h2>References</h2>
         <ol>
-          <div tabindex="0" v-for="footnote in footnotes" :key="footnote.fid" class="footnote" :id="'footnote' + footnote.footnoteNumber">
+          <div tabindex="0" v-for="footnote in footnotes" :key="footnote.id" class="footnote" :id="'footnote' + footnote.number">
             <span class="footnote-number">
-              <button :data-digit="digits(footnote)" @click="slideToElement('reference' + footnote.footnoteNumber)">{{ footnote.footnoteNumber }}</button>
+              <button :data-digit="digits(footnote)" @click="slideToElement('reference' + footnote.number)">{{ footnote.number }}</button>
             </span>
             <cite v-html="footnote.text"></cite>
           </div>
@@ -24,7 +24,6 @@
 
 <script>
 import Footnote from "./Footnote.vue";
-import externalData from '../assets/data.json';
 import Vue from 'vue';
 import EssayDataService from "../services/EssayDataService";
 
@@ -39,7 +38,7 @@ export default {
   data() {
     return {
       essay: '',
-      footnotes: externalData.footnotes
+      footnotes: [],
     };
   },
   methods: {
@@ -49,7 +48,7 @@ export default {
       element.focus({ preventScroll: true });
     },
     digits(fn) {
-      if (fn.footnoteNumber < 10) {
+      if (fn.number < 10) {
         return 1;
       } else {
         return 2;
@@ -62,6 +61,7 @@ export default {
             return;
           }
           this.essay = response.data.data.essay.body;
+          this.footnotes = response.data.data.footnotes;
         })
         .catch((e) => {
           console.log(e);
@@ -76,8 +76,8 @@ export default {
       var tempEssay = this.essay;
 
       this.footnotes.forEach(fn => {
-        let fnHTML = "<footnote text='" + fn.text + "' fid='" + fn.fid + "' @reference-clicked=\"slideToElement\" :footnoteNumber='" + fn.footnoteNumber + "'></footnote>";
-        let fnReplaceString = '[fid:' + fn.fid + ']';
+        let fnHTML = "<footnote text='" + fn.text + "' fid='" + fn.id + "' @reference-clicked=\"slideToElement\" :number='" + fn.number + "'></footnote>";
+        let fnReplaceString = '[fid:' + fn.id + ']';
         tempEssay = tempEssay.replace(fnReplaceString, fnHTML);
       });
 

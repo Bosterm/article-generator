@@ -2,10 +2,10 @@
   <sup class="ref-container" :data-tooltip="title"
     ><button
       class="reference"
-      :id="'reference' + footnoteNumber"
+      :id="'reference' + number"
       :data-digit="digits"
       @click="slideToElement"
-      >{{ footnoteNumber }}</button
+      >{{ number }}</button
     >
     <span class="tooltip" v-html="title"></span>
   </sup>
@@ -15,9 +15,9 @@
 export default {
   created() {
     let footnote = {
-      fid: this.fid,
+      id: this.id,
       text: this.text,
-      footnoteNumber: this.footnoteNumber,
+      number: this.number,
       digits: this.digits,
     };
     this.$emit("footnote-added", footnote);
@@ -28,18 +28,18 @@ export default {
       type: String,
       required: true,
     },
-    fid: {
+    id: {
       type: String,
       required: true,
     },
-    footnoteNumber: {
+    number: {
       type: Number,
       required: true,
     },
   },
   methods: {
     slideToElement() {
-      this.$emit("reference-clicked", 'footnote' + this.footnoteNumber)
+      this.$emit("reference-clicked", 'footnote' + this.number)
     }
   },
   computed: {
@@ -48,7 +48,7 @@ export default {
       return text;
     },
     digits() {
-      if (this.footnoteNumber < 10) {
+      if (this.number < 10) {
         return 1;
       } else {
         return 2;
