@@ -16,9 +16,11 @@ class LocalOnly
      */
     public function handle(Request $request, Closure $next)
     {
-        if($request->getHost() != 'localhost')
+        $requestOrigin = parse_url($request->headers->get('origin'),  PHP_URL_HOST);
+
+        if($requestOrigin != 'benostermeier.com')
         {
-            return response('', 400);
+            return response('Only api requests from same domain are allowed.', 403);
         }
         
         return $next($request);
